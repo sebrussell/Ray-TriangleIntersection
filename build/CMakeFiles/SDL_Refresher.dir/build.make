@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = G:\Compilers\cmake\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = G:\Compilers\cmake\bin\cmake.exe -E remove -f
+RM = C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "G:\C++\SDL_Refresher - Copy"
+CMAKE_SOURCE_DIR = C:\Users\sebru_000\Desktop\Ray-TriangleIntersection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "G:\C++\SDL_Refresher - Copy\build"
+CMAKE_BINARY_DIR = C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/SDL_Refresher.dir/depend.make
@@ -58,16 +58,16 @@ include CMakeFiles/SDL_Refresher.dir/flags.make
 
 CMakeFiles/SDL_Refresher.dir/main.cpp.obj: CMakeFiles/SDL_Refresher.dir/flags.make
 CMakeFiles/SDL_Refresher.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="G:\C++\SDL_Refresher - Copy\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SDL_Refresher.dir/main.cpp.obj"
-	G:\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDL_Refresher.dir\main.cpp.obj -c "G:\C++\SDL_Refresher - Copy\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SDL_Refresher.dir/main.cpp.obj"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDL_Refresher.dir\main.cpp.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\main.cpp
 
 CMakeFiles/SDL_Refresher.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Refresher.dir/main.cpp.i"
-	G:\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "G:\C++\SDL_Refresher - Copy\main.cpp" > CMakeFiles\SDL_Refresher.dir\main.cpp.i
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\main.cpp > CMakeFiles\SDL_Refresher.dir\main.cpp.i
 
 CMakeFiles/SDL_Refresher.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Refresher.dir/main.cpp.s"
-	G:\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "G:\C++\SDL_Refresher - Copy\main.cpp" -o CMakeFiles\SDL_Refresher.dir\main.cpp.s
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\main.cpp -o CMakeFiles\SDL_Refresher.dir\main.cpp.s
 
 CMakeFiles/SDL_Refresher.dir/main.cpp.obj.requires:
 
@@ -82,16 +82,16 @@ CMakeFiles/SDL_Refresher.dir/main.cpp.obj.provides.build: CMakeFiles/SDL_Refresh
 
 CMakeFiles/SDL_Refresher.dir/Math.cpp.obj: CMakeFiles/SDL_Refresher.dir/flags.make
 CMakeFiles/SDL_Refresher.dir/Math.cpp.obj: ../Math.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="G:\C++\SDL_Refresher - Copy\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_Refresher.dir/Math.cpp.obj"
-	G:\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDL_Refresher.dir\Math.cpp.obj -c "G:\C++\SDL_Refresher - Copy\Math.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_Refresher.dir/Math.cpp.obj"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\SDL_Refresher.dir\Math.cpp.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\Math.cpp
 
 CMakeFiles/SDL_Refresher.dir/Math.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Refresher.dir/Math.cpp.i"
-	G:\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "G:\C++\SDL_Refresher - Copy\Math.cpp" > CMakeFiles\SDL_Refresher.dir\Math.cpp.i
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\Math.cpp > CMakeFiles\SDL_Refresher.dir\Math.cpp.i
 
 CMakeFiles/SDL_Refresher.dir/Math.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Refresher.dir/Math.cpp.s"
-	G:\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "G:\C++\SDL_Refresher - Copy\Math.cpp" -o CMakeFiles\SDL_Refresher.dir\Math.cpp.s
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\Math.cpp -o CMakeFiles\SDL_Refresher.dir\Math.cpp.s
 
 CMakeFiles/SDL_Refresher.dir/Math.cpp.obj.requires:
 
@@ -118,7 +118,7 @@ SDL_Refresher.exe: CMakeFiles/SDL_Refresher.dir/build.make
 SDL_Refresher.exe: CMakeFiles/SDL_Refresher.dir/linklibs.rsp
 SDL_Refresher.exe: CMakeFiles/SDL_Refresher.dir/objects1.rsp
 SDL_Refresher.exe: CMakeFiles/SDL_Refresher.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="G:\C++\SDL_Refresher - Copy\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SDL_Refresher.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SDL_Refresher.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\SDL_Refresher.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -136,6 +136,6 @@ CMakeFiles/SDL_Refresher.dir/clean:
 .PHONY : CMakeFiles/SDL_Refresher.dir/clean
 
 CMakeFiles/SDL_Refresher.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "G:\C++\SDL_Refresher - Copy" "G:\C++\SDL_Refresher - Copy" "G:\C++\SDL_Refresher - Copy\build" "G:\C++\SDL_Refresher - Copy\build" "G:\C++\SDL_Refresher - Copy\build\CMakeFiles\SDL_Refresher.dir\DependInfo.cmake" --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\sebru_000\Desktop\Ray-TriangleIntersection C:\Users\sebru_000\Desktop\Ray-TriangleIntersection C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\SDL_Refresher.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SDL_Refresher.dir/depend
 

@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = G:\Compilers\cmake\bin\cmake.exe
+CMAKE_COMMAND = C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe
 
 # The command to remove a file.
-RM = G:\Compilers\cmake\bin\cmake.exe -E remove -f
+RM = C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "G:\C++\SDL_Refresher - Copy"
+CMAKE_SOURCE_DIR = C:\Users\sebru_000\Desktop\Ray-TriangleIntersection
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "G:\C++\SDL_Refresher - Copy\build"
+CMAKE_BINARY_DIR = C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = "G:\C++\SDL_Refresher - Copy\build"
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	G:\Compilers\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	G:\Compilers\cmake\bin\cmake-gui.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake-gui.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -79,9 +79,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "G:\C++\SDL_Refresher - Copy\build\CMakeFiles" "G:\C++\SDL_Refresher - Copy\build\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "G:\C++\SDL_Refresher - Copy\build\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target

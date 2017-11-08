@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "G:/C++/SDL_Refresher - Copy/Math.cpp" "G:/C++/SDL_Refresher - Copy/build/CMakeFiles/SDL_Refresher.dir/Math.cpp.obj"
-  "G:/C++/SDL_Refresher - Copy/main.cpp" "G:/C++/SDL_Refresher - Copy/build/CMakeFiles/SDL_Refresher.dir/main.cpp.obj"
+  "C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/Math.cpp" "C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/SDL_Refresher.dir/Math.cpp.obj"
+  "C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/main.cpp" "C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/SDL_Refresher.dir/main.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

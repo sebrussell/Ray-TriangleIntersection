@@ -1,4 +1,4 @@
-# Install script for directory: G:/C++/SDL_Refresher - Copy
+# Install script for directory: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "G:/C++/SDL_Refresher - Copy/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

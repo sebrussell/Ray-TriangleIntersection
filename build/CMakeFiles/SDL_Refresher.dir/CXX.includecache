@@ -6,25 +6,27 @@
 
 #IncludeRegexTransform: 
 
-G:/C++/SDL_Refresher - Copy/Math.cpp
+C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/Math.cpp
 Math.h
-G:/C++/SDL_Refresher - Copy/Math.h
+C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/Math.h
 iostream
 -
 
-G:/C++/SDL_Refresher - Copy/Math.h
+C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/Math.h
 math.h
 -
 vector
 -
 iostream
 -
+memory
+-
 
-G:/C++/SDL_Refresher - Copy/main.cpp
+C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/main.cpp
 iostream
 -
 time.h
 -
 Math.h
-G:/C++/SDL_Refresher - Copy/Math.h
+C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/Math.h
 
