@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+G:/C++/SDL_Refresher - Copy/Math.cpp
+Math.h
+G:/C++/SDL_Refresher - Copy/Math.h
+iostream
+-
+
+G:/C++/SDL_Refresher - Copy/Math.h
+math.h
+-
+vector
+-
+iostream
+-
+
+G:/C++/SDL_Refresher - Copy/main.cpp
+iostream
+-
+time.h
+-
+Math.h
+G:/C++/SDL_Refresher - Copy/Math.h
+
