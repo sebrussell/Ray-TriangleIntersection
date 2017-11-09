@@ -61,7 +61,7 @@ class Math
 		static Vector3 SubtractVectors(Vector3 _vector1, Vector3 _vector2);
 		static Vector3 MultiplyVectorWithFloat(Vector3 _vector1, float _float);
 		static Vector3 CheckForPlaneIntersection(Plane _plane, Ray _ray);
-		static void SetupPlane(std::weak_ptr<Plane> _plane);
+		static Plane SetupPlane(Plane _plane);
 };
 
 #endif 

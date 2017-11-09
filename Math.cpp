@@ -179,19 +179,17 @@ Vector3 Math::CheckForPlaneIntersection(Plane _plane, Ray _ray)
 	
 	float t = top / bottom;
 	
-	WriteVector(_plane.normal);
-	
 	Vector3 interestionPoint = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t)); 
 	
 	return interestionPoint;
 	
 }
 
-void Math::SetupPlane(std::weak_ptr<Plane> _plane)
+Plane Math::SetupPlane(Plane _plane)
 {
-	_plane.lock()->normal = GetPlaneNormal(*_plane.lock().get());
-	_plane.lock()->k = GetDotProduct(_plane.lock()->normal, _plane.lock()->a);
+	_plane.normal = GetPlaneNormal(_plane);
+	_plane.k = GetDotProduct(_plane.normal, _plane.a);
 	
-	std
+	return _plane;
 }
 
