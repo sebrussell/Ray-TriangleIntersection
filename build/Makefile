@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named SDL_Refresher
+# Target rules for targets named demo
 
 # Build rule for target.
-SDL_Refresher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 SDL_Refresher
-.PHONY : SDL_Refresher
+demo: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 demo
+.PHONY : demo
 
 # fast build rule for target.
-SDL_Refresher/fast:
-	$(MAKE) -f CMakeFiles\SDL_Refresher.dir\build.make CMakeFiles/SDL_Refresher.dir/build
-.PHONY : SDL_Refresher/fast
+demo/fast:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
+.PHONY : demo/fast
 
 Math.obj: Math.cpp.obj
 
@@ -128,7 +128,7 @@ Math.obj: Math.cpp.obj
 
 # target to build an object file
 Math.cpp.obj:
-	$(MAKE) -f CMakeFiles\SDL_Refresher.dir\build.make CMakeFiles/SDL_Refresher.dir/Math.cpp.obj
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Math.cpp.obj
 .PHONY : Math.cpp.obj
 
 Math.i: Math.cpp.i
@@ -137,7 +137,7 @@ Math.i: Math.cpp.i
 
 # target to preprocess a source file
 Math.cpp.i:
-	$(MAKE) -f CMakeFiles\SDL_Refresher.dir\build.make CMakeFiles/SDL_Refresher.dir/Math.cpp.i
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Math.cpp.i
 .PHONY : Math.cpp.i
 
 Math.s: Math.cpp.s
@@ -146,7 +146,7 @@ Math.s: Math.cpp.s
 
 # target to generate assembly for a file
 Math.cpp.s:
-	$(MAKE) -f CMakeFiles\SDL_Refresher.dir\build.make CMakeFiles/SDL_Refresher.dir/Math.cpp.s
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Math.cpp.s
 .PHONY : Math.cpp.s
 
 main.obj: main.cpp.obj
@@ -155,7 +155,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\SDL_Refresher.dir\build.make CMakeFiles/SDL_Refresher.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -164,7 +164,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\SDL_Refresher.dir\build.make CMakeFiles/SDL_Refresher.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -173,7 +173,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\SDL_Refresher.dir\build.make CMakeFiles/SDL_Refresher.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -182,9 +182,9 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... SDL_Refresher
+	@echo ... demo
 	@echo ... edit_cache
+	@echo ... rebuild_cache
 	@echo ... Math.obj
 	@echo ... Math.i
 	@echo ... Math.s

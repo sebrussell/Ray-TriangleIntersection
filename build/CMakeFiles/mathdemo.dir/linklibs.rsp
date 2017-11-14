@@ -1,0 +1,1 @@
+ -LC:/Users/sebru_000/Desktop/Ray-TriangleIntersection/libraries/assimp/lib  -LC:/Users/sebru_000/Desktop/Ray-TriangleIntersection/libraries/glfw/lib -lassimp -lglfw3 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

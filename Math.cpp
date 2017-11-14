@@ -172,16 +172,30 @@ Vector3 Math::MultiplyVectorWithFloat(Vector3 _vector1, float _float)
 	return temp;
 }
 
-Vector3 Math::CheckForPlaneIntersection(Plane _plane, Ray _ray)
+bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint)
 {		
 	float top = _plane.k - GetDotProduct(_plane.normal, _ray.startingPoint);
 	float bottom = GetDotProduct(_plane.normal, _ray.direction);
 	
 	float t = top / bottom;
 	
-	Vector3 interestionPoint = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t)); 
+	if(isinf(t))
+	{
+		return false;
+	}
+	else
+	{
+		
+		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));
+		
+		_intersectionPoint->x = temp.x;
+		_intersectionPoint->y = temp.y;
+		_intersectionPoint->z = temp.z;
+		
+		return true;
+	}
 	
-	return interestionPoint;
+	
 	
 }
 

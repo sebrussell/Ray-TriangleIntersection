@@ -1,13 +1,16 @@
 cmake_minimum_required(VERSION 2.6)
-set(CMAKE_CXX_STANDARD 11)
-project(APP)
+project(RayIntersection)
 
 set(CMAKE_BUILD_TYPE Release)
 
-add_executable(SDL_Refresher
+SET(CMAKE_CXX_FLAGS "-std=c++11")
+
+add_executable(demo
   main.cpp  
   Math.cpp
 )
+
+
 
 
 

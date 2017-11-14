@@ -60,7 +60,7 @@ class Math
 		static Vector3 AddVectors(Vector3 _vector1, Vector3 _vector2);
 		static Vector3 SubtractVectors(Vector3 _vector1, Vector3 _vector2);
 		static Vector3 MultiplyVectorWithFloat(Vector3 _vector1, float _float);
-		static Vector3 CheckForPlaneIntersection(Plane _plane, Ray _ray);
+		static bool CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint);
 		static Plane SetupPlane(Plane _plane);
 };
 
