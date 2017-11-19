@@ -8,12 +8,12 @@ class Object
 		Object(std::string _location);
 		~Object();
 		void Draw();
-		void DrawHit();
+		void DrawHit(int _memoryLocation, bool _hit);
+		int CheckForIntersection(Ray _ray);
 	private:
 		objl::Loader m_loader;
 		int vertexAmount;
 		unsigned int VBO, VAO;
-		std::vector<Plane> triangles;	
-		
-		bool CheckForIntersection(Ray _ray);
+		std::vector<Plane> triangles;
+		std::shared_ptr<Vector3> intersectionPoint;
 };

@@ -135,7 +135,7 @@ Vector3 Math::GetPlaneNormal(Plane _plane)
 	topVector.x = topVector.x / bottomVector;
 	topVector.y = topVector.y / bottomVector;
 	topVector.z = topVector.z / bottomVector;
-	
+
 	return topVector;
 }
 
@@ -176,33 +176,38 @@ bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vec
 {		
 	float top = _plane.k - GetDotProduct(_plane.normal, _ray.startingPoint);
 	float bottom = GetDotProduct(_plane.normal, _ray.direction);
+
+	float t = top / bottom;	
+
 	
-	std::cout << bottom;	
-	
-	float t = top / bottom;
-	
-	if(isinf(t))
+	if(!isinf(t) && t > 0)
 	{
-		return false;
-	}
-	else
-	{
-		
 		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));
-		
-		_intersectionPoint->x = temp.x;
-		_intersectionPoint->y = temp.y;
-		_intersectionPoint->z = temp.z;
-		
-		return true;
-	}	
+				
+		if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.b, _plane.a), SubtractVectors(temp, _plane.a)), _plane.normal)) >= 0)
+		{
+			if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.c, _plane.b), SubtractVectors(temp, _plane.b)), _plane.normal)) >= 0)
+			{
+				if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.a, _plane.c), SubtractVectors(temp, _plane.c)), _plane.normal)) >= 0)
+				{
+					_intersectionPoint->x = temp.x;
+					_intersectionPoint->y = temp.y;
+					_intersectionPoint->z = temp.z;
+					return true;
+				}
+			}
+		}
+	}
+	
+	return false;
+	
+	
 }
 
 Plane Math::SetupPlane(Plane _plane)
 {
 	_plane.normal = GetPlaneNormal(_plane);
 	_plane.k = GetDotProduct(_plane.normal, _plane.a);
-	
 	return _plane;
 }
 

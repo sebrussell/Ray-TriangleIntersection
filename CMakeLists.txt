@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 2.6)
+set(CMAKE_CXX_STANDARD 11)
 project(RayIntersection)
 
 include_directories(
@@ -16,7 +17,7 @@ link_directories(
 
 set(CMAKE_BUILD_TYPE Release)
 
-SET(CMAKE_CXX_FLAGS "-std=c++11")
+set(CMAKE_CXX_FLAGS "-fopenmp")
 
 add_executable(demo
   main.cpp    

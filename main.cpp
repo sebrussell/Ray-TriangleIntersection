@@ -1,6 +1,7 @@
 #include "OBJ_Loader.h"
 #include "Shader.h"
 #include "Object.h"
+#include <time.h>
 
 std::shared_ptr<Camera> cameraMain = std::make_shared<Camera>(Camera());
 
@@ -12,14 +13,94 @@ int main(int argc, char* argv[])
 	openGL.SetCamera(cameraMain);
 	
 	Shader ourShader("..//shaders/defaultShader.vs", "..//shaders/defaultShader.fs");	
-	Shader blueShader("..//shaders/defaultShader.vs", "..//shaders/blueShader.fs");	
 	ourShader.CreateMatrixBuffer();
 	
-	Object teapot("..//models/teapot.obj");
-
+	Object teapot("..//models/typhoon.obj");
+	//Object teapot("..//models/heli/uh60.obj");
 	
-    Ray ray(0, 0, 0, 1, 0, 0);
+	int x_max = 256;
+	int y_max = 256;
+	
+	clock_t start, stop;
 
+	int count = 0;
+	
+	int averageAmount = 10;
+	
+	/*
+	//----REGULAR VERSION 1------ 7.9627
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{		
+		for(int x = 0; x < x_max; x++)
+		{
+			for(int y = 0; y < y_max; y++)
+			{
+				count += teapot.CheckForIntersection(Ray(0, x, y, 1, 0, 0));
+			}
+		}			
+	}
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
+	
+	
+	//----REGULAR VERSION 2------ 7.7637
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{	
+		for (int xy = 0; xy < x_max*y_max; ++xy) {
+			int x = xy / y_max;
+			int y = xy % y_max;
+			count += teapot.CheckForIntersection(Ray(0, x, y, 1, 0, 0));
+		}	
+	}		
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
+	
+	
+	//-----PARRALLEL VERSION 1-----	5.0389
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{	
+		#pragma omp parallel
+		{
+			for(int x = 0; x < x_max; x++)
+			{
+				#pragma omp for	
+				for(int y = 0; y < y_max; y++)
+				{
+					count += teapot.CheckForIntersection(Ray(0, x, y, 1, 0, 0));
+				}
+			}	
+		}
+	}		
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
+	*/
+	
+	//-----PARRALLEL VERSION 2-----	4.7708 seconds
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{	
+		#pragma omp parallel for schedule(dynamic,1)
+		for (int xy = 0; xy < x_max*y_max; ++xy) {
+			int x = xy / y_max;
+			int y = xy % y_max;
+			count += teapot.CheckForIntersection(Ray(0, x, y, 1, 0, 0));
+		}
+	}		
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
 	
 
 	while(openGL.ShouldWindowClose())
@@ -34,11 +115,10 @@ int main(int argc, char* argv[])
         glm::mat4 projection = glm::perspective(glm::radians(cameraMain->Zoom), (float)openGL.GetWindowWidth() / (float)openGL.GetWindowHeight(), 0.1f, 1000.0f);
 		ourShader.UpdateMatrix(projection, view);	
 
-		blueShader.use();
-		blueShader.setMat4("model", model);		
-		teapot.Draw();
-		
+
 		ourShader.use();
+		model = glm::translate(model, glm::vec3(-2.0, 0.0, 0.0));
+		model = glm::rotate(model, (float)glfwGetTime() * glm::radians(50.0f), glm::vec3(0.5f, 1.0f, 0.5f)); 
 		ourShader.setMat4("model", model);		
 		teapot.Draw();
 		
@@ -46,52 +126,6 @@ int main(int argc, char* argv[])
 		
 		openGL.SwapBuffers(); 
 	}
-	
-	
-	/*
-	
-	
-	
-	 // 256 * 256 0, 256, 256, 1, 0, 0
-	
-	std::shared_ptr<Vector3> intersectionPoint(new Vector3);
-	
-	for(int i = 0; i < loader.LoadedIndices.size() / 3; i++)
-	{
-		int n = i * 3;
-		float x, y, z;
-		x = loader.LoadedVertices[loader.LoadedIndices[n]].Position.X;
-		y = loader.LoadedVertices[loader.LoadedIndices[n]].Position.Y;
-		z = loader.LoadedVertices[loader.LoadedIndices[n]].Position.Z;
-		
-		float g, h, j;
-		g = loader.LoadedVertices[loader.LoadedIndices[n + 1]].Position.X;
-		h = loader.LoadedVertices[loader.LoadedIndices[n + 1]].Position.Y;
-		j = loader.LoadedVertices[loader.LoadedIndices[n + 1]].Position.Z;
-		
-		float c, v, b;
-		c = loader.LoadedVertices[loader.LoadedIndices[n + 2]].Position.X;
-		v = loader.LoadedVertices[loader.LoadedIndices[n + 2]].Position.Y;
-		b = loader.LoadedVertices[loader.LoadedIndices[n + 2]].Position.Z;
-
-		Plane plane(x, y, z, g, h, j, c, v, b);
-		plane = Math::SetupPlane(plane);
-		triangles.push_back(plane);
-	}
-	
-	
-	int count = 0;
-	for(int i = 0; i < 1; i++)
-	{
-		if(Math::CheckForPlaneIntersection(triangles[i], ray, intersectionPoint))
-		{		
-			count += 1;
-			Math::WriteVector(Vector3(intersectionPoint->x, intersectionPoint->y, intersectionPoint->z)); 
-		}
-	}
-	 
-	 std::cout << count;
-	*/
 
 	return 0;
 }

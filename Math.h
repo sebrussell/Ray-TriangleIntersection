@@ -40,6 +40,8 @@ struct Plane
 	Vector3 a, b, c;
 	Vector3 normal;
 	float k;
+	int memoryLocation;
+	bool previouslyHit;
 };
 
 

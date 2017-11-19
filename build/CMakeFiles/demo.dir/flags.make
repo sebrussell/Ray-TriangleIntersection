@@ -9,7 +9,7 @@ C_DEFINES =
 
 C_INCLUDES = @CMakeFiles/demo.dir/includes_C.rsp
 
-CXX_FLAGS = -std=c++11 -O3 -DNDEBUG  
+CXX_FLAGS = -fopenmp -O3 -DNDEBUG   -std=gnu++11
 
 CXX_DEFINES = 
 
