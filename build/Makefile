@@ -149,6 +149,87 @@ Math.cpp.s:
 	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Math.cpp.s
 .PHONY : Math.cpp.s
 
+Object.obj: Object.cpp.obj
+
+.PHONY : Object.obj
+
+# target to build an object file
+Object.cpp.obj:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Object.cpp.obj
+.PHONY : Object.cpp.obj
+
+Object.i: Object.cpp.i
+
+.PHONY : Object.i
+
+# target to preprocess a source file
+Object.cpp.i:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Object.cpp.i
+.PHONY : Object.cpp.i
+
+Object.s: Object.cpp.s
+
+.PHONY : Object.s
+
+# target to generate assembly for a file
+Object.cpp.s:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Object.cpp.s
+.PHONY : Object.cpp.s
+
+OpenGL.obj: OpenGL.cpp.obj
+
+.PHONY : OpenGL.obj
+
+# target to build an object file
+OpenGL.cpp.obj:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/OpenGL.cpp.obj
+.PHONY : OpenGL.cpp.obj
+
+OpenGL.i: OpenGL.cpp.i
+
+.PHONY : OpenGL.i
+
+# target to preprocess a source file
+OpenGL.cpp.i:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/OpenGL.cpp.i
+.PHONY : OpenGL.cpp.i
+
+OpenGL.s: OpenGL.cpp.s
+
+.PHONY : OpenGL.s
+
+# target to generate assembly for a file
+OpenGL.cpp.s:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/OpenGL.cpp.s
+.PHONY : OpenGL.cpp.s
+
+libraries/glad/src/glad.obj: libraries/glad/src/glad.c.obj
+
+.PHONY : libraries/glad/src/glad.obj
+
+# target to build an object file
+libraries/glad/src/glad.c.obj:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj
+.PHONY : libraries/glad/src/glad.c.obj
+
+libraries/glad/src/glad.i: libraries/glad/src/glad.c.i
+
+.PHONY : libraries/glad/src/glad.i
+
+# target to preprocess a source file
+libraries/glad/src/glad.c.i:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/libraries/glad/src/glad.c.i
+.PHONY : libraries/glad/src/glad.c.i
+
+libraries/glad/src/glad.s: libraries/glad/src/glad.c.s
+
+.PHONY : libraries/glad/src/glad.s
+
+# target to generate assembly for a file
+libraries/glad/src/glad.c.s:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/libraries/glad/src/glad.c.s
+.PHONY : libraries/glad/src/glad.c.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -188,6 +269,15 @@ help:
 	@echo ... Math.obj
 	@echo ... Math.i
 	@echo ... Math.s
+	@echo ... Object.obj
+	@echo ... Object.i
+	@echo ... Object.s
+	@echo ... OpenGL.obj
+	@echo ... OpenGL.i
+	@echo ... OpenGL.s
+	@echo ... libraries/glad/src/glad.obj
+	@echo ... libraries/glad/src/glad.i
+	@echo ... libraries/glad/src/glad.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

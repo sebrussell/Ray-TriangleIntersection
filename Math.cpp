@@ -177,6 +177,8 @@ bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vec
 	float top = _plane.k - GetDotProduct(_plane.normal, _ray.startingPoint);
 	float bottom = GetDotProduct(_plane.normal, _ray.direction);
 	
+	std::cout << bottom;	
+	
 	float t = top / bottom;
 	
 	if(isinf(t))
@@ -193,10 +195,7 @@ bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vec
 		_intersectionPoint->z = temp.z;
 		
 		return true;
-	}
-	
-	
-	
+	}	
 }
 
 Plane Math::SetupPlane(Plane _plane)

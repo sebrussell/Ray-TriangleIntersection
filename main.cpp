@@ -1,16 +1,59 @@
-#include <iostream>
-#include <time.h>
-
 #include "OBJ_Loader.h"
-#include "Math.h"
+#include "Shader.h"
+#include "Object.h"
+
+std::shared_ptr<Camera> cameraMain = std::make_shared<Camera>(Camera());
 
 int main(int argc, char* argv[])
 {	
-	objl::Loader loader;
-	loader.LoadFile("..//models/teapot.obj");
 	
-	std::vector<Plane> triangles;	
-	Ray ray(0, 1, 5, 0, 0, 1);
+	OpenGL openGL;
+	openGL.Setup();
+	openGL.SetCamera(cameraMain);
+	
+	Shader ourShader("..//shaders/defaultShader.vs", "..//shaders/defaultShader.fs");	
+	Shader blueShader("..//shaders/defaultShader.vs", "..//shaders/blueShader.fs");	
+	ourShader.CreateMatrixBuffer();
+	
+	Object teapot("..//models/teapot.obj");
+
+	
+    Ray ray(0, 0, 0, 1, 0, 0);
+
+	
+
+	while(openGL.ShouldWindowClose())
+	{	
+		glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
+		openGL.ProcessInput();
+
+		
+		glm::mat4 model = glm::mat4();		
+        glm::mat4 view = cameraMain->GetViewMatrix();
+        glm::mat4 projection = glm::perspective(glm::radians(cameraMain->Zoom), (float)openGL.GetWindowWidth() / (float)openGL.GetWindowHeight(), 0.1f, 1000.0f);
+		ourShader.UpdateMatrix(projection, view);	
+
+		blueShader.use();
+		blueShader.setMat4("model", model);		
+		teapot.Draw();
+		
+		ourShader.use();
+		ourShader.setMat4("model", model);		
+		teapot.Draw();
+		
+
+		
+		openGL.SwapBuffers(); 
+	}
+	
+	
+	/*
+	
+	
+	
+	 // 256 * 256 0, 256, 256, 1, 0, 0
+	
 	std::shared_ptr<Vector3> intersectionPoint(new Vector3);
 	
 	for(int i = 0; i < loader.LoadedIndices.size() / 3; i++)
@@ -37,15 +80,18 @@ int main(int argc, char* argv[])
 	}
 	
 	
-	
-	for(int i = 0; i < triangles.size(); i++)
+	int count = 0;
+	for(int i = 0; i < 1; i++)
 	{
 		if(Math::CheckForPlaneIntersection(triangles[i], ray, intersectionPoint))
-		{			
+		{		
+			count += 1;
 			Math::WriteVector(Vector3(intersectionPoint->x, intersectionPoint->y, intersectionPoint->z)); 
 		}
 	}
-
+	 
+	 std::cout << count;
+	*/
 
 	return 0;
 }

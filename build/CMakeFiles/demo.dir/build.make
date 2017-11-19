@@ -57,6 +57,7 @@ include CMakeFiles/demo.dir/progress.make
 include CMakeFiles/demo.dir/flags.make
 
 CMakeFiles/demo.dir/main.cpp.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/main.cpp.obj: CMakeFiles/demo.dir/includes_CXX.rsp
 CMakeFiles/demo.dir/main.cpp.obj: ../main.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/demo.dir/main.cpp.obj"
 	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\demo.dir\main.cpp.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\main.cpp
@@ -81,6 +82,7 @@ CMakeFiles/demo.dir/main.cpp.obj.provides.build: CMakeFiles/demo.dir/main.cpp.ob
 
 
 CMakeFiles/demo.dir/Math.cpp.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/Math.cpp.obj: CMakeFiles/demo.dir/includes_CXX.rsp
 CMakeFiles/demo.dir/Math.cpp.obj: ../Math.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/demo.dir/Math.cpp.obj"
 	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\demo.dir\Math.cpp.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\Math.cpp
@@ -104,21 +106,102 @@ CMakeFiles/demo.dir/Math.cpp.obj.provides: CMakeFiles/demo.dir/Math.cpp.obj.requ
 CMakeFiles/demo.dir/Math.cpp.obj.provides.build: CMakeFiles/demo.dir/Math.cpp.obj
 
 
+CMakeFiles/demo.dir/OpenGL.cpp.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/OpenGL.cpp.obj: CMakeFiles/demo.dir/includes_CXX.rsp
+CMakeFiles/demo.dir/OpenGL.cpp.obj: ../OpenGL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/demo.dir/OpenGL.cpp.obj"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\demo.dir\OpenGL.cpp.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\OpenGL.cpp
+
+CMakeFiles/demo.dir/OpenGL.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/OpenGL.cpp.i"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\OpenGL.cpp > CMakeFiles\demo.dir\OpenGL.cpp.i
+
+CMakeFiles/demo.dir/OpenGL.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/OpenGL.cpp.s"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\OpenGL.cpp -o CMakeFiles\demo.dir\OpenGL.cpp.s
+
+CMakeFiles/demo.dir/OpenGL.cpp.obj.requires:
+
+.PHONY : CMakeFiles/demo.dir/OpenGL.cpp.obj.requires
+
+CMakeFiles/demo.dir/OpenGL.cpp.obj.provides: CMakeFiles/demo.dir/OpenGL.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/OpenGL.cpp.obj.provides.build
+.PHONY : CMakeFiles/demo.dir/OpenGL.cpp.obj.provides
+
+CMakeFiles/demo.dir/OpenGL.cpp.obj.provides.build: CMakeFiles/demo.dir/OpenGL.cpp.obj
+
+
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj: CMakeFiles/demo.dir/includes_C.rsp
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj: ../libraries/glad/src/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\libraries\glad\src\glad.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\libraries\glad\src\glad.c
+
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/libraries/glad/src/glad.c.i"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\libraries\glad\src\glad.c > CMakeFiles\demo.dir\libraries\glad\src\glad.c.i
+
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/libraries/glad/src/glad.c.s"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\libraries\glad\src\glad.c -o CMakeFiles\demo.dir\libraries\glad\src\glad.c.s
+
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.requires:
+
+.PHONY : CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.requires
+
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.provides: CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.requires
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.provides.build
+.PHONY : CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.provides
+
+CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.provides.build: CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj
+
+
+CMakeFiles/demo.dir/Object.cpp.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/Object.cpp.obj: CMakeFiles/demo.dir/includes_CXX.rsp
+CMakeFiles/demo.dir/Object.cpp.obj: ../Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/demo.dir/Object.cpp.obj"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\demo.dir\Object.cpp.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\Object.cpp
+
+CMakeFiles/demo.dir/Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/demo.dir/Object.cpp.i"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\Object.cpp > CMakeFiles\demo.dir\Object.cpp.i
+
+CMakeFiles/demo.dir/Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/demo.dir/Object.cpp.s"
+	C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\Object.cpp -o CMakeFiles\demo.dir\Object.cpp.s
+
+CMakeFiles/demo.dir/Object.cpp.obj.requires:
+
+.PHONY : CMakeFiles/demo.dir/Object.cpp.obj.requires
+
+CMakeFiles/demo.dir/Object.cpp.obj.provides: CMakeFiles/demo.dir/Object.cpp.obj.requires
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/Object.cpp.obj.provides.build
+.PHONY : CMakeFiles/demo.dir/Object.cpp.obj.provides
+
+CMakeFiles/demo.dir/Object.cpp.obj.provides.build: CMakeFiles/demo.dir/Object.cpp.obj
+
+
 # Object files for target demo
 demo_OBJECTS = \
 "CMakeFiles/demo.dir/main.cpp.obj" \
-"CMakeFiles/demo.dir/Math.cpp.obj"
+"CMakeFiles/demo.dir/Math.cpp.obj" \
+"CMakeFiles/demo.dir/OpenGL.cpp.obj" \
+"CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj" \
+"CMakeFiles/demo.dir/Object.cpp.obj"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
 demo.exe: CMakeFiles/demo.dir/main.cpp.obj
 demo.exe: CMakeFiles/demo.dir/Math.cpp.obj
+demo.exe: CMakeFiles/demo.dir/OpenGL.cpp.obj
+demo.exe: CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj
+demo.exe: CMakeFiles/demo.dir/Object.cpp.obj
 demo.exe: CMakeFiles/demo.dir/build.make
 demo.exe: CMakeFiles/demo.dir/linklibs.rsp
 demo.exe: CMakeFiles/demo.dir/objects1.rsp
 demo.exe: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable demo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -128,6 +211,9 @@ CMakeFiles/demo.dir/build: demo.exe
 
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/main.cpp.obj.requires
 CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/Math.cpp.obj.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/OpenGL.cpp.obj.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/libraries/glad/src/glad.c.obj.requires
+CMakeFiles/demo.dir/requires: CMakeFiles/demo.dir/Object.cpp.obj.requires
 
 .PHONY : CMakeFiles/demo.dir/requires
 
