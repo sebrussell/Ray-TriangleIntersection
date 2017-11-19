@@ -14,7 +14,7 @@ float Math::GetMagnitude(Vector3 _vector)
 
 float Math::GetDotProduct(Vector3 _vector1, Vector3 _vector2)
 {
-	return (_vector1.x * _vector2.x) + (_vector1.y * _vector2.y) + (_vector1.z * _vector2.z);
+	return (_vector1.x * _vector2.x) + (_vector1.y * _vector2.y) + (_vector1.z * _vector2.z); // 3 multiplications + 2 additions
 }
 
 float Math::GetShortestAngle(Vector3 _vector1, Vector3 _vector2)
@@ -26,7 +26,7 @@ Vector3 Math::GetCrossProduct(Vector3 _vector1, Vector3 _vector2)
 {
 	Vector3 result(0, 0, 0);
 	
-	result.x = (_vector1.y * _vector2.z) - (_vector1.z * _vector2.y);
+	result.x = (_vector1.y * _vector2.z) - (_vector1.z * _vector2.y);	//6 multiplications and 3 subtractions which is 9 operations
 	result.y = (_vector1.z * _vector2.x) - (_vector1.x * _vector2.z);
 	result.z = (_vector1.x * _vector2.y) - (_vector1.y * _vector2.x);
 	
@@ -143,7 +143,7 @@ Vector3 Math::AddVectors(Vector3 _vector1, Vector3 _vector2)
 {
 	Vector3 temp;
 	
-	temp.x = _vector1.x + _vector2.x;
+	temp.x = _vector1.x + _vector2.x;	//3 operations
 	temp.y = _vector1.y + _vector2.y;
 	temp.z = _vector1.z + _vector2.z;
 	
@@ -154,7 +154,7 @@ Vector3 Math::SubtractVectors(Vector3 _vector1, Vector3 _vector2)
 {
 	Vector3 temp;
 	
-	temp.x = _vector1.x - _vector2.x;
+	temp.x = _vector1.x - _vector2.x;	//3 operations
 	temp.y = _vector1.y - _vector2.y;
 	temp.z = _vector1.z - _vector2.z;
 	
@@ -165,7 +165,7 @@ Vector3 Math::MultiplyVectorWithFloat(Vector3 _vector1, float _float)
 {
 	Vector3 temp;
 	
-	temp.x = _vector1.x * _float;
+	temp.x = _vector1.x * _float;	//3  operations
 	temp.y = _vector1.y * _float;
 	temp.z = _vector1.z * _float;
 	
@@ -174,22 +174,26 @@ Vector3 Math::MultiplyVectorWithFloat(Vector3 _vector1, float _float)
 
 bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint)
 {		
-	float top = _plane.k - GetDotProduct(_plane.normal, _ray.startingPoint);
-	float bottom = GetDotProduct(_plane.normal, _ray.direction);
+	float top = _plane.k - GetDotProduct(_plane.normal, _ray.startingPoint); //1 subtraction + function which is 5 operations = 6 operations
+	float bottom = GetDotProduct(_plane.normal, _ray.direction); // functions which is 5 operations
 
-	float t = top / bottom;	
+	float t = top / bottom;	//division is 1 operations
+	
+	//total of 12 operations so far
 
 	
 	if(!isinf(t) && t > 0)
 	{
-		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));
+		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));	//6 operations
 				
+				//5				9				3									3					= total of 20 operations
 		if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.b, _plane.a), SubtractVectors(temp, _plane.a)), _plane.normal)) >= 0)
 		{
 			if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.c, _plane.b), SubtractVectors(temp, _plane.b)), _plane.normal)) >= 0)
 			{
 				if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.a, _plane.c), SubtractVectors(temp, _plane.c)), _plane.normal)) >= 0)
 				{
+					//comparison if statements = 60 operations therefore 72 operations so far
 					_intersectionPoint->x = temp.x;
 					_intersectionPoint->y = temp.y;
 					_intersectionPoint->z = temp.z;
@@ -199,6 +203,7 @@ bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vec
 		}
 	}
 	
+	//72 total operations
 	return false;
 	
 	

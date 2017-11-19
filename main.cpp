@@ -27,7 +27,7 @@ int main(int argc, char* argv[])
 	
 	int averageAmount = 10;
 	
-	/*
+	
 	//----REGULAR VERSION 1------ 7.9627
 	count = 0;
 	start = clock();
@@ -46,7 +46,7 @@ int main(int argc, char* argv[])
 	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
 	
 	
-	
+	/*
 	//----REGULAR VERSION 2------ 7.7637
 	count = 0;
 	start = clock();
@@ -61,6 +61,17 @@ int main(int argc, char* argv[])
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
 	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
+	
+	
+	//-----REGULAR VERSION 3----- 7.5525 seconds
+	count = 0;
+	start = clock();
+	count = teapot.CheckForIntersection();
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
+	
 	
 	
 	
@@ -84,7 +95,7 @@ int main(int argc, char* argv[])
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
 	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
-	*/
+	
 	
 	//-----PARRALLEL VERSION 2-----	4.7708 seconds
 	count = 0;
@@ -101,7 +112,7 @@ int main(int argc, char* argv[])
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
 	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
-	
+	*/
 
 	while(openGL.ShouldWindowClose())
 	{	

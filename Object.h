@@ -10,6 +10,7 @@ class Object
 		void Draw();
 		void DrawHit(int _memoryLocation, bool _hit);
 		int CheckForIntersection(Ray _ray);
+		int CheckForIntersection();
 	private:
 		objl::Loader m_loader;
 		int vertexAmount;

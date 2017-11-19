@@ -119,3 +119,34 @@ int Object::CheckForIntersection(Ray _ray)
 	return count;
 }
 
+int Object::CheckForIntersection()
+{
+	int x_max = 256;
+	int y_max = 256;
+	int averageAmount = 10;
+	int count = 0;
+	
+	std::vector<Ray> rays;
+	for (int xy = 0; xy < x_max*y_max; ++xy) {
+		int x = xy / y_max;
+		int y = xy % y_max;
+		rays.push_back(Ray(0, x, y, 1, 0, 0));
+	}
+	
+	for(int i = 0; i < averageAmount; i++)
+	{	
+		for(int m = 0; m < triangles.size(); m++)
+		{	
+			for(int n = 0; n < rays.size(); n++)
+			{
+				if(Math::CheckForPlaneIntersection(triangles[m], rays[n], intersectionPoint))
+				{
+					DrawHit(triangles[m].memoryLocation, true);
+					count++;
+				}
+			}
+		}
+	}
+	return count;
+}
+
