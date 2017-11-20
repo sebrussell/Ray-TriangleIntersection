@@ -180,20 +180,24 @@ bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vec
 	float t = top / bottom;	//division is 1 operations
 	
 	//total of 12 operations so far
-
 	
-	if(!isinf(t) && t > 0)
-	{
-		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));	//6 operations
-				
-				//5				9				3									3					= total of 20 operations
-		if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.b, _plane.a), SubtractVectors(temp, _plane.a)), _plane.normal)) >= 0)
-		{
-			if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.c, _plane.b), SubtractVectors(temp, _plane.b)), _plane.normal)) >= 0)
+	if(!std::isinf(t) && t > 0)
+	{		
+		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));	//6 operations	
+			
+		
+						//5				9				3									3					= total of 20 operations
+		float b1 = (GetDotProduct(GetCrossProduct(SubtractVectors(_plane.b, _plane.a), SubtractVectors(temp, _plane.a)), _plane.normal));
+		float b2 = (GetDotProduct(GetCrossProduct(SubtractVectors(_plane.c, _plane.b), SubtractVectors(temp, _plane.b)), _plane.normal));
+		float b3 = (GetDotProduct(GetCrossProduct(SubtractVectors(_plane.a, _plane.c), SubtractVectors(temp, _plane.c)), _plane.normal));
+		//60 operations therefore 72 operations so far
+		
+		if( b1 >= 0)
+		{			
+			if(b2 >= 0)
 			{
-				if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.a, _plane.c), SubtractVectors(temp, _plane.c)), _plane.normal)) >= 0)
-				{
-					//comparison if statements = 60 operations therefore 72 operations so far
+				if(b3 >= 0)
+				{	
 					_intersectionPoint->x = temp.x;
 					_intersectionPoint->y = temp.y;
 					_intersectionPoint->z = temp.z;
@@ -209,10 +213,170 @@ bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vec
 	
 }
 
+bool Math::MollerTrumboreIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint)
+{
+	const float epsilon = 0.0000001;
+	Vector3 edge1, edge2, h, s, q;
+	float a,f,u,v;
+	
+	edge1 = SubtractVectors(_plane.b, _plane.a);	//3 operations
+	edge2 = SubtractVectors(_plane.c, _plane.a);	//3 operations
+	h = GetCrossProduct(_ray.direction, edge2);		//9 operations
+	a = GetDotProduct(edge1, h);					//5 operations
+	if(a > -epsilon && a < epsilon)
+	{
+		return false;
+	}
+	
+	f = 1 / a;												//1 operations
+	s = SubtractVectors(_ray.startingPoint, _plane.a);		//3 operations
+	u = f * GetDotProduct(s, h);							//6 operations (5 + 1)
+	if (u < 0.0 || u > 1.0)
+	{
+		return false;
+	}
+	
+	q = GetCrossProduct(s, edge1);					//9 operations
+    v = f * GetDotProduct(_ray.direction, q);		//6 operations
+	if (v < 0.0 || u + v > 1.0)
+	{
+        return false;
+	}
+	
+	float t = f * GetDotProduct(edge2, q);			//6 operations
+	
+	if (t > epsilon) // ray intersection
+    {
+											//	3					3					== 6 operations
+        Vector3 outIntersectionPoint = MultiplyVectorWithFloat(AddVectors(_ray.startingPoint, _ray.direction), t); 
+        return true;
+    }
+	//57 total operations
+	return false;
+}
+
+bool Math::MatrixIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint)
+{
+									//1								1							1					1							1					= 5 operations
+	const float dz =   _plane.worldToLocal[2][0] * _ray.direction.x
+    				 + _plane.worldToLocal[2][1] * _ray.direction.y
+    				 + _plane.worldToLocal[2][2] * _ray.direction.z;
+	if(dz == 0.0f)
+	{
+		return false;
+	}
+	
+	const float oz =   _plane.worldToLocal[2][0] * _ray.startingPoint.x
+    				 + _plane.worldToLocal[2][1] * _ray.startingPoint.y
+    				 + _plane.worldToLocal[2][2] * _ray.startingPoint.z
+    				 + _plane.worldToLocal[2][3];								//6 operations
+					 
+	const float t = - oz / dz;													//2 operations
+	
+	if(t < 0)
+	{
+		return false;
+	}
+							//			1	1										1		1										1	1			=6 operations
+	Vector3 hit( _ray.startingPoint.x + (t * _ray.direction.x), _ray.startingPoint.y + (t * _ray.direction.y), _ray.startingPoint.z + (t * _ray.direction.z));
+	
+	const float b1 =   _plane.worldToLocal[0][0] * hit.x
+    				 + _plane.worldToLocal[0][1] * hit.y
+    				 + _plane.worldToLocal[0][2] * hit.z
+    				 + _plane.worldToLocal[0][3];				//6 operations
+
+	const float b2 =   _plane.worldToLocal[1][0] * hit.x
+					 + _plane.worldToLocal[1][1] * hit.y
+					 + _plane.worldToLocal[1][2] * hit.z
+					 + _plane.worldToLocal[1][3];				//6 operations
+					 
+	//Vector3 a = SubtractVectors(_plane.c, _plane.b);
+	//Vector3 b = SubtractVectors(hit, _plane.b);
+	//Vector3 c = GetCrossProduct(a, b);
+	//float b3 = GetDotProduct(c, _plane.normal);
+	
+	if (  b1 < 0.0f  ||  b2 < 0.0f  ||  b1 + b2 > 1.0f  )
+	{
+            return false;
+	}
+	//31 operations
+	return true;
+}
+
 Plane Math::SetupPlane(Plane _plane)
 {
 	_plane.normal = GetPlaneNormal(_plane);
 	_plane.k = GetDotProduct(_plane.normal, _plane.a);
+	_plane.edge1 = SubtractVectors(_plane.b, _plane.a);
+	_plane.edge2 = SubtractVectors(_plane.c, _plane.a);
+	
+    if (fabs(_plane.normal.x) > fabs(_plane.normal.y) && fabs(_plane.normal.x) > fabs(_plane.normal.z)) 
+	{
+    	_plane.worldToLocal[0][0] = 0.0f;
+		_plane.worldToLocal[0][1] = _plane.edge2.z / _plane.normal.x;
+		_plane.worldToLocal[0][2] = - _plane.edge2.y / _plane.normal.x;
+		_plane.worldToLocal[0][3] = GetCrossProduct( _plane.c, _plane.a ).x / _plane.normal.x;
+    	
+		_plane.worldToLocal[1][0] = 0.0f;
+		_plane.worldToLocal[1][1] = - _plane.edge1.z / _plane.normal.x;
+		_plane.worldToLocal[1][2] = _plane.edge1.y / _plane.normal.x;		
+		_plane.worldToLocal[1][3] = - GetCrossProduct( _plane.b, _plane.a  ).x / _plane.normal.x;
+    	
+		_plane.worldToLocal[2][0] = 1.0f;    	
+    	_plane.worldToLocal[2][1] = _plane.normal.y / _plane.normal.x;   
+    	_plane.worldToLocal[2][2] = _plane.normal.z / _plane.normal.x;
+    	_plane.worldToLocal[2][3] = - GetDotProduct( _plane.a, _plane.normal ) / _plane.normal.x;
+    }
+    else if (  fabs( _plane.normal.y ) > fabs( _plane.normal.z )  ) {
+    	_plane.worldToLocal[0][0] = - _plane.edge2.z / _plane.normal.y;
+		_plane.worldToLocal[0][1] = 0.0f;
+		_plane.worldToLocal[0][2] = _plane.edge2.x / _plane.normal.y;
+		_plane.worldToLocal[0][3] = GetCrossProduct( _plane.c, _plane.a ).y / _plane.normal.y;
+		
+    	_plane.worldToLocal[1][0] = _plane.edge1.z / _plane.normal.y;
+		_plane.worldToLocal[1][1] = 0.0f;
+		_plane.worldToLocal[1][2] = - _plane.edge1.x / _plane.normal.y;
+		_plane.worldToLocal[1][3] = - GetCrossProduct( _plane.b, _plane.a ).y / _plane.normal.y;
+		
+    	_plane.worldToLocal[2][0] = _plane.normal.x / _plane.normal.y;
+		_plane.worldToLocal[2][1] = 1.0f;
+    	_plane.worldToLocal[2][2] = _plane.normal.z / _plane.normal.y;    	
+    	_plane.worldToLocal[2][3] = - GetDotProduct( _plane.a, _plane.normal ) / _plane.normal.y;
+    }
+    else if (  fabs( _plane.normal.z ) > 0.0f  ) {
+    	_plane.worldToLocal[0][0] = _plane.edge2.y / _plane.normal.z;
+		_plane.worldToLocal[0][1] = - _plane.edge2.x / _plane.normal.z;
+		_plane.worldToLocal[0][2] = 0.0f;
+		_plane.worldToLocal[0][3] = GetCrossProduct( _plane.c, _plane.a).z / _plane.normal.z;
+		
+    	_plane.worldToLocal[1][0] = - _plane.edge1.y / _plane.normal.z;
+		_plane.worldToLocal[1][1] = _plane.edge1.x / _plane.normal.z;
+		_plane.worldToLocal[1][2] = 0.0f;
+		_plane.worldToLocal[1][3] = - GetCrossProduct( _plane.b, _plane.a ).z / _plane.normal.z;
+		
+    	_plane.worldToLocal[2][0] = _plane.normal.x / _plane.normal.z;
+		_plane.worldToLocal[2][1] = _plane.normal.y / _plane.normal.z;
+    	_plane.worldToLocal[2][2] = 1.0f;
+    	_plane.worldToLocal[2][3] = - GetDotProduct( _plane.a, _plane.normal ) / _plane.normal.z;
+    }
+    else {
+    	// This triangle is degenerate. Set the transformation matrix to
+    	// the 0 matrix, which in turn will yield 0 values in places that
+    	// intersection calculations will detect and treat as a miss.
+    	_plane.worldToLocal[0][0] = 0.0f;
+    	_plane.worldToLocal[1][0] = 0.0f;
+    	_plane.worldToLocal[2][0] = 0.0f;
+    	_plane.worldToLocal[0][1] = 0.0f;
+    	_plane.worldToLocal[1][1] = 0.0f;
+    	_plane.worldToLocal[2][1] = 0.0f;
+    	_plane.worldToLocal[0][2] = 0.0f;
+    	_plane.worldToLocal[1][2] = 0.0f;
+    	_plane.worldToLocal[2][2] = 0.0f;
+    	_plane.worldToLocal[0][3] = 0.0f;
+    	_plane.worldToLocal[1][3] = 0.0f;
+    	_plane.worldToLocal[2][3] = 0.0f;
+    }
+
 	return _plane;
 }
 

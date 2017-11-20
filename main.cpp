@@ -17,7 +17,7 @@ int main(int argc, char* argv[])
 	
 	Object teapot("..//models/typhoon.obj");
 	//Object teapot("..//models/heli/uh60.obj");
-	
+
 	int x_max = 256;
 	int y_max = 256;
 	
@@ -25,10 +25,10 @@ int main(int argc, char* argv[])
 
 	int count = 0;
 	
-	int averageAmount = 10;
+	int averageAmount = 1;
 	
-	
-	//----REGULAR VERSION 1------ 7.9627
+	/*
+	//----REGULAR VERSION 1------ 7.9627 seconds
 	count = 0;
 	start = clock();
 	for(int i = 0; i < averageAmount; i++)
@@ -45,9 +45,46 @@ int main(int argc, char* argv[])
 	std::cout << count / averageAmount << std::endl;
 	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
 	
+	/*
+	//----MOLLER VERSION 1------ 3.2771 seconds
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{		
+		for(int x = 0; x < x_max; x++)
+		{
+			for(int y = 0; y < y_max; y++)
+			{
+				count += teapot.MollerTrumboreIntersection(Ray(0, x, y, 1, 0, 0));
+			}
+		}			
+	}
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	*/
+	
+	
+	//----MATRIX VERSION 1------  seconds
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{		
+		for(int x = 0; x < x_max; x++)
+		{
+			for(int y = 0; y < y_max; y++)
+			{
+				count += teapot.MatrixIntersection(Ray(0, x, y, 1, 0, 0));
+			}
+		}			
+	}
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
 	
 	/*
-	//----REGULAR VERSION 2------ 7.7637
+	//----REGULAR VERSION 2------ 7.7637 seconds
 	count = 0;
 	start = clock();
 	for(int i = 0; i < averageAmount; i++)
@@ -75,7 +112,7 @@ int main(int argc, char* argv[])
 	
 	
 	
-	//-----PARRALLEL VERSION 1-----	5.0389
+	//-----PARRALLEL VERSION 1-----	5.0389 seconds
 	count = 0;
 	start = clock();
 	for(int i = 0; i < averageAmount; i++)

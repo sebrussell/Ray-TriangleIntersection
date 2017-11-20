@@ -5,6 +5,9 @@
 #include <vector>
 #include <iostream>
 #include <memory>
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 
 struct Vector3
 {
@@ -38,10 +41,12 @@ struct Plane
 		c = Vector3(cx, cy, cz);
 	}
 	Vector3 a, b, c;
-	Vector3 normal;
+	Vector3 normal, edge1, edge2;
 	float k;
 	int memoryLocation;
 	bool previouslyHit;
+	float worldToLocal[3][4];
+	
 };
 
 
@@ -63,6 +68,8 @@ class Math
 		static Vector3 SubtractVectors(Vector3 _vector1, Vector3 _vector2);
 		static Vector3 MultiplyVectorWithFloat(Vector3 _vector1, float _float);
 		static bool CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint);
+		static bool MollerTrumboreIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint);
+		static bool MatrixIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint);
 		static Plane SetupPlane(Plane _plane);
 };
 

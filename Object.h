@@ -11,6 +11,8 @@ class Object
 		void DrawHit(int _memoryLocation, bool _hit);
 		int CheckForIntersection(Ray _ray);
 		int CheckForIntersection();
+		int MollerTrumboreIntersection(Ray _ray);
+		int MatrixIntersection(Ray _ray);
 	private:
 		objl::Loader m_loader;
 		int vertexAmount;

@@ -150,3 +150,31 @@ int Object::CheckForIntersection()
 	return count;
 }
 
+int Object::MollerTrumboreIntersection(Ray _ray)
+{	
+	int count = 0;
+	for(int i = 0; i < triangles.size(); i++)
+	{
+		if(Math::MollerTrumboreIntersection(triangles[i], _ray, intersectionPoint))
+		{
+			DrawHit(triangles[i].memoryLocation, true);
+			count++;
+		}
+	}
+	return count;
+}
+
+int Object::MatrixIntersection(Ray _ray)
+{
+	int count = 0;
+	for(int i = 0; i < triangles.size(); i++)
+	{
+		if(Math::MatrixIntersection(triangles[i], _ray, intersectionPoint))
+		{
+			DrawHit(triangles[i].memoryLocation, true);
+			count++;
+		}
+	}
+	return count;
+}
+
