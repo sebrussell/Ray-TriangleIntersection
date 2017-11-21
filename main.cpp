@@ -25,9 +25,9 @@ int main(int argc, char* argv[])
 
 	int count = 0;
 	
-	int averageAmount = 1;
+	int averageAmount = 10;
 	
-	/*
+	
 	//----REGULAR VERSION 1------ 7.9627 seconds
 	count = 0;
 	start = clock();
@@ -43,47 +43,9 @@ int main(int argc, char* argv[])
 	}
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
-	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
-	
-	/*
-	//----MOLLER VERSION 1------ 3.2771 seconds
-	count = 0;
-	start = clock();
-	for(int i = 0; i < averageAmount; i++)
-	{		
-		for(int x = 0; x < x_max; x++)
-		{
-			for(int y = 0; y < y_max; y++)
-			{
-				count += teapot.MollerTrumboreIntersection(Ray(0, x, y, 1, 0, 0));
-			}
-		}			
-	}
-	stop = clock();	
-	std::cout << count / averageAmount << std::endl;
-	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
-	*/
+	std::cout << "Regular Version 1: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
 	
 	
-	//----MATRIX VERSION 1------  seconds
-	count = 0;
-	start = clock();
-	for(int i = 0; i < averageAmount; i++)
-	{		
-		for(int x = 0; x < x_max; x++)
-		{
-			for(int y = 0; y < y_max; y++)
-			{
-				count += teapot.MatrixIntersection(Ray(0, x, y, 1, 0, 0));
-			}
-		}			
-	}
-	stop = clock();	
-	std::cout << count / averageAmount << std::endl;
-	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
-	
-	
-	/*
 	//----REGULAR VERSION 2------ 7.7637 seconds
 	count = 0;
 	start = clock();
@@ -97,9 +59,8 @@ int main(int argc, char* argv[])
 	}		
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
-	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
-	
-	
+	std::cout << "Regular Version 2: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+		
 	
 	//-----REGULAR VERSION 3----- 7.5525 seconds
 	count = 0;
@@ -107,9 +68,7 @@ int main(int argc, char* argv[])
 	count = teapot.CheckForIntersection();
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
-	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
-	
-	
+	std::cout << "Regular Version 3: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
 	
 	
 	//-----PARRALLEL VERSION 1-----	5.0389 seconds
@@ -131,7 +90,7 @@ int main(int argc, char* argv[])
 	}		
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
-	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
+	std::cout << "Parallel Version 1: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
 	
 	
 	//-----PARRALLEL VERSION 2-----	4.7708 seconds
@@ -148,8 +107,89 @@ int main(int argc, char* argv[])
 	}		
 	stop = clock();	
 	std::cout << count / averageAmount << std::endl;
-	std::cout << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
-	*/
+	std::cout << "Parallel Version 2: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;	
+	
+		
+	//----MOLLER VERSION 1------ Typhoon Object: 6.0464 seconds
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{		
+		for(int x = 0; x < x_max; x++)
+		{
+			for(int y = 0; y < y_max; y++)
+			{
+				count += teapot.MollerTrumboreIntersection(Ray(0, x, y, 1, 0, 0));
+			}
+		}			
+	}
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << "Moller Version 1: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
+	
+	//----MATRIX VERSION 1------ Typhoon Object: 5.6556 seconds
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{		
+		for(int x = 0; x < x_max; x++)
+		{
+			for(int y = 0; y < y_max; y++)
+			{
+				count += teapot.MatrixIntersection(Ray(0, x, y, 1, 0, 0));
+			}
+		}			
+	}
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << "Matrix Version 1: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
+	
+	
+	//----MOLLER PARALLEL VERSION 1------ Typhoon Object: 5.1626 seconds
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{		
+		#pragma omp parallel
+		{
+			for(int x = 0; x < x_max; x++)
+			{
+				#pragma omp for	
+				for(int y = 0; y < y_max; y++)
+				{
+					count += teapot.MollerTrumboreIntersection(Ray(0, x, y, 1, 0, 0));
+				}
+			}	
+		}		
+	}
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << "Moller Parallel 1: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
+	
+	//----MATRIX PARALLEL VERSION 1------ Typhoon Object: 5.1457 seconds
+	count = 0;
+	start = clock();
+	for(int i = 0; i < averageAmount; i++)
+	{		
+		#pragma omp parallel
+		{
+			for(int x = 0; x < x_max; x++)
+			{
+				#pragma omp for	
+				for(int y = 0; y < y_max; y++)
+				{
+					count += teapot.MatrixIntersection(Ray(0, x, y, 1, 0, 0));
+				}
+			}	
+		}		
+	}
+	stop = clock();	
+	std::cout << count / averageAmount << std::endl;
+	std::cout << "Matrix Parallel 1: " << ((float)(stop - start) / CLOCKS_PER_SEC) / averageAmount << std::endl;
+	
 
 	while(openGL.ShouldWindowClose())
 	{	

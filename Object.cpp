@@ -20,9 +20,9 @@ Object::Object(std::string _location)
 		vertices[n + 1] = m_loader.LoadedVertices[i].Position.Y;
 		vertices[n + 2] = m_loader.LoadedVertices[i].Position.Z;
 		
-		vertices[n + 3] = 1.0;
-		vertices[n + 4] = 1.0;
-		vertices[n + 5] = 0.0;
+		vertices[n + 3] = 0.0;
+		vertices[n + 4] = 0.0;
+		vertices[n + 5] = 1.0;
 		
 		if(i % 3 == 0)
 		{			
@@ -112,7 +112,7 @@ int Object::CheckForIntersection(Ray _ray)
 	{
 		if(Math::CheckForPlaneIntersection(triangles[i], _ray, intersectionPoint))
 		{
-			DrawHit(triangles[i].memoryLocation, true);
+			//DrawHit(triangles[i].memoryLocation, true);
 			count++;
 		}
 	}
@@ -141,7 +141,7 @@ int Object::CheckForIntersection()
 			{
 				if(Math::CheckForPlaneIntersection(triangles[m], rays[n], intersectionPoint))
 				{
-					DrawHit(triangles[m].memoryLocation, true);
+					//DrawHit(triangles[m].memoryLocation, true);
 					count++;
 				}
 			}
@@ -157,7 +157,7 @@ int Object::MollerTrumboreIntersection(Ray _ray)
 	{
 		if(Math::MollerTrumboreIntersection(triangles[i], _ray, intersectionPoint))
 		{
-			DrawHit(triangles[i].memoryLocation, true);
+			//DrawHit(triangles[i].memoryLocation, true);
 			count++;
 		}
 	}
@@ -171,7 +171,7 @@ int Object::MatrixIntersection(Ray _ray)
 	{
 		if(Math::MatrixIntersection(triangles[i], _ray, intersectionPoint))
 		{
-			DrawHit(triangles[i].memoryLocation, true);
+			//DrawHit(triangles[i].memoryLocation, true);
 			count++;
 		}
 	}

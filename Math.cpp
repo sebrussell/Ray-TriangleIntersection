@@ -180,24 +180,20 @@ bool Math::CheckForPlaneIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vec
 	float t = top / bottom;	//division is 1 operations
 	
 	//total of 12 operations so far
+
 	
 	if(!std::isinf(t) && t > 0)
-	{		
-		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));	//6 operations	
-			
-		
-						//5				9				3									3					= total of 20 operations
-		float b1 = (GetDotProduct(GetCrossProduct(SubtractVectors(_plane.b, _plane.a), SubtractVectors(temp, _plane.a)), _plane.normal));
-		float b2 = (GetDotProduct(GetCrossProduct(SubtractVectors(_plane.c, _plane.b), SubtractVectors(temp, _plane.b)), _plane.normal));
-		float b3 = (GetDotProduct(GetCrossProduct(SubtractVectors(_plane.a, _plane.c), SubtractVectors(temp, _plane.c)), _plane.normal));
-		//60 operations therefore 72 operations so far
-		
-		if( b1 >= 0)
-		{			
-			if(b2 >= 0)
+	{
+		Vector3 temp = AddVectors(_ray.startingPoint, MultiplyVectorWithFloat(_ray.direction, t));	//6 operations
+				
+				//5				9				3									3					= total of 20 operations
+		if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.b, _plane.a), SubtractVectors(temp, _plane.a)), _plane.normal)) >= 0)
+		{
+			if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.c, _plane.b), SubtractVectors(temp, _plane.b)), _plane.normal)) >= 0)
 			{
-				if(b3 >= 0)
-				{	
+				if((GetDotProduct(GetCrossProduct(SubtractVectors(_plane.a, _plane.c), SubtractVectors(temp, _plane.c)), _plane.normal)) >= 0)
+				{
+					//comparison if statements = 60 operations therefore 72 operations so far
 					_intersectionPoint->x = temp.x;
 					_intersectionPoint->y = temp.y;
 					_intersectionPoint->z = temp.z;
@@ -246,9 +242,11 @@ bool Math::MollerTrumboreIntersection(Plane _plane, Ray _ray, std::shared_ptr<Ve
 	float t = f * GetDotProduct(edge2, q);			//6 operations
 	
 	if (t > epsilon) // ray intersection
-    {
-											//	3					3					== 6 operations
+    {											//	3					3					== 6 operations
         Vector3 outIntersectionPoint = MultiplyVectorWithFloat(AddVectors(_ray.startingPoint, _ray.direction), t); 
+		_intersectionPoint->x = outIntersectionPoint.x;
+		_intersectionPoint->y = outIntersectionPoint.y;
+		_intersectionPoint->z = outIntersectionPoint.z;		
         return true;
     }
 	//57 total operations
@@ -257,10 +255,10 @@ bool Math::MollerTrumboreIntersection(Plane _plane, Ray _ray, std::shared_ptr<Ve
 
 bool Math::MatrixIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _intersectionPoint)
 {
-									//1								1							1					1							1					= 5 operations
+					
 	const float dz =   _plane.worldToLocal[2][0] * _ray.direction.x
     				 + _plane.worldToLocal[2][1] * _ray.direction.y
-    				 + _plane.worldToLocal[2][2] * _ray.direction.z;
+    				 + _plane.worldToLocal[2][2] * _ray.direction.z;			//5 operations
 	if(dz == 0.0f)
 	{
 		return false;
@@ -277,7 +275,7 @@ bool Math::MatrixIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _
 	{
 		return false;
 	}
-							//			1	1										1		1										1	1			=6 operations
+						  //		  1	   1										 1	  1										    1	1			=6 operations
 	Vector3 hit( _ray.startingPoint.x + (t * _ray.direction.x), _ray.startingPoint.y + (t * _ray.direction.y), _ray.startingPoint.z + (t * _ray.direction.z));
 	
 	const float b1 =   _plane.worldToLocal[0][0] * hit.x
@@ -290,25 +288,25 @@ bool Math::MatrixIntersection(Plane _plane, Ray _ray, std::shared_ptr<Vector3> _
 					 + _plane.worldToLocal[1][2] * hit.z
 					 + _plane.worldToLocal[1][3];				//6 operations
 					 
-	//Vector3 a = SubtractVectors(_plane.c, _plane.b);
-	//Vector3 b = SubtractVectors(hit, _plane.b);
-	//Vector3 c = GetCrossProduct(a, b);
-	//float b3 = GetDotProduct(c, _plane.normal);
-	
 	if (  b1 < 0.0f  ||  b2 < 0.0f  ||  b1 + b2 > 1.0f  )
 	{
-            return false;
+        return false;
 	}
+	
+	_intersectionPoint->x = hit.x;
+	_intersectionPoint->y = hit.y;
+	_intersectionPoint->z = hit.z;
+	
 	//31 operations
 	return true;
 }
 
 Plane Math::SetupPlane(Plane _plane)
-{
-	_plane.normal = GetPlaneNormal(_plane);
-	_plane.k = GetDotProduct(_plane.normal, _plane.a);
+{	
 	_plane.edge1 = SubtractVectors(_plane.b, _plane.a);
 	_plane.edge2 = SubtractVectors(_plane.c, _plane.a);
+	_plane.normal = GetCrossProduct(_plane.edge1, _plane.edge2);
+	_plane.k = GetDotProduct(_plane.normal, _plane.a);
 	
     if (fabs(_plane.normal.x) > fabs(_plane.normal.y) && fabs(_plane.normal.x) > fabs(_plane.normal.z)) 
 	{

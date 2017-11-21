@@ -28,32 +28,32 @@ The CXX compiler identification is GNU, found in "C:/Users/sebru_000/Desktop/Ray
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_8f636/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_8f636.dir\build.make CMakeFiles/cmTC_8f636.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_bf1ed/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_bf1ed.dir\build.make CMakeFiles/cmTC_bf1ed.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_8f636.dir/testCCompiler.c.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_8f636.dir\testCCompiler.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\CMakeTmp\testCCompiler.c
-Linking C executable cmTC_8f636.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_8f636.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_8f636.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_8f636.dir/objects.a @CMakeFiles\cmTC_8f636.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_8f636.dir/objects.a -Wl,--no-whole-archive  -o cmTC_8f636.exe -Wl,--out-implib,libcmTC_8f636.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_8f636.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_bf1ed.dir/testCCompiler.c.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_bf1ed.dir\testCCompiler.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTC_bf1ed.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_bf1ed.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_bf1ed.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_bf1ed.dir/objects.a @CMakeFiles\cmTC_bf1ed.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_bf1ed.dir/objects.a -Wl,--no-whole-archive  -o cmTC_bf1ed.exe -Wl,--out-implib,libcmTC_bf1ed.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_bf1ed.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_03ed2/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_03ed2.dir\build.make CMakeFiles/cmTC_03ed2.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_60306/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_60306.dir\build.make CMakeFiles/cmTC_60306.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_03ed2.dir/CMakeCCompilerABI.c.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_03ed2.dir\CMakeCCompilerABI.c.obj   -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCCompilerABI.c
-Linking C executable cmTC_03ed2.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_03ed2.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_03ed2.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_03ed2.dir/objects.a @CMakeFiles\cmTC_03ed2.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_03ed2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_03ed2.exe -Wl,--out-implib,libcmTC_03ed2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Building C object CMakeFiles/cmTC_60306.dir/CMakeCCompilerABI.c.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_60306.dir\CMakeCCompilerABI.c.obj   -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCCompilerABI.c
+Linking C executable cmTC_60306.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_60306.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_60306.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_60306.dir/objects.a @CMakeFiles\cmTC_60306.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_60306.dir/objects.a -Wl,--no-whole-archive  -o cmTC_60306.exe -Wl,--out-implib,libcmTC_60306.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe
 COLLECT_LTO_WRAPPER=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe
@@ -63,8 +63,8 @@ Thread model: posix
 gcc version 4.9.1 (i686-posix-dwarf-rev2, Built by MinGW-W64 project) 
 COMPILER_PATH=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_03ed2.exe' '-mtune=generic' '-march=i686'
- C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\cc7oYTk3.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -o cmTC_03ed2.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_03ed2.dir/objects.a --no-whole-archive --out-implib libcmTC_03ed2.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60306.exe' '-mtune=generic' '-march=i686'
+ C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\ccTGIlEw.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -o cmTC_60306.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_60306.dir/objects.a --no-whole-archive --out-implib libcmTC_60306.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
@@ -72,16 +72,16 @@ Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_03ed2/fast"]
-  ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_03ed2.dir\build.make CMakeFiles/cmTC_03ed2.dir/build]
+  ignore line: [Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_60306/fast"]
+  ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_60306.dir\build.make CMakeFiles/cmTC_60306.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_03ed2.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_03ed2.dir\CMakeCCompilerABI.c.obj   -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTC_03ed2.exe]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_03ed2.dir\link.txt --verbose=1]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_03ed2.dir/objects.a]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_03ed2.dir/objects.a @CMakeFiles\cmTC_03ed2.dir\objects1.rsp]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_03ed2.dir/objects.a -Wl,--no-whole-archive  -o cmTC_03ed2.exe -Wl,--out-implib,libcmTC_03ed2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Building C object CMakeFiles/cmTC_60306.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe    -o CMakeFiles\cmTC_60306.dir\CMakeCCompilerABI.c.obj   -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_60306.exe]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_60306.dir\link.txt --verbose=1]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_60306.dir/objects.a]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_60306.dir/objects.a @CMakeFiles\cmTC_60306.dir\objects1.rsp]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_60306.dir/objects.a -Wl,--no-whole-archive  -o cmTC_60306.exe -Wl,--out-implib,libcmTC_60306.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe]
@@ -98,13 +98,13 @@ Parsed C implicit link information from above output:
   ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib/]
   ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/]
   ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_03ed2.exe' '-mtune=generic' '-march=i686']
-  link line: [ C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\cc7oYTk3.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -o cmTC_03ed2.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_03ed2.dir/objects.a --no-whole-archive --out-implib libcmTC_03ed2.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_60306.exe' '-mtune=generic' '-march=i686']
+  link line: [ C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\ccTGIlEw.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_eh -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -o cmTC_60306.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_60306.dir/objects.a --no-whole-archive --out-implib libcmTC_60306.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc -lgcc_eh -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o]
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\cc7oYTk3.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\ccTGIlEw.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_eh] ==> ignore
@@ -128,7 +128,7 @@ Parsed C implicit link information from above output:
     arg [i386pe] ==> ignore
     arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_03ed2.exe] ==> ignore
+    arg [cmTC_60306.exe] ==> ignore
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o] ==> ignore
     arg [-LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1] ==> dir [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1]
@@ -138,10 +138,10 @@ Parsed C implicit link information from above output:
     arg [-LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib] ==> dir [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib]
     arg [-LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../..] ==> dir [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_03ed2.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_60306.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_03ed2.dll.a] ==> ignore
+    arg [libcmTC_60306.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -185,16 +185,16 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_c2c91/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_c2c91.dir\build.make CMakeFiles/cmTC_c2c91.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_60e42/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_60e42.dir\build.make CMakeFiles/cmTC_60e42.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_c2c91.dir/feature_tests.c.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_c2c91.dir\feature_tests.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_c2c91.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_c2c91.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_c2c91.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_c2c91.dir/objects.a @CMakeFiles\cmTC_c2c91.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_c2c91.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c2c91.exe -Wl,--out-implib,libcmTC_c2c91.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_c2c91.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_60e42.dir/feature_tests.c.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe   -std=c11 -o CMakeFiles\cmTC_60e42.dir\feature_tests.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_60e42.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_60e42.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_60e42.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_60e42.dir/objects.a @CMakeFiles\cmTC_60e42.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_60e42.dir/objects.a -Wl,--no-whole-archive  -o cmTC_60e42.exe -Wl,--out-implib,libcmTC_60e42.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_60e42.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
@@ -207,16 +207,16 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleI
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_5273b/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_5273b.dir\build.make CMakeFiles/cmTC_5273b.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_25d28/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_25d28.dir\build.make CMakeFiles/cmTC_25d28.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_5273b.dir/feature_tests.c.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_5273b.dir\feature_tests.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_5273b.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_5273b.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_5273b.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_5273b.dir/objects.a @CMakeFiles\cmTC_5273b.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_5273b.dir/objects.a -Wl,--no-whole-archive  -o cmTC_5273b.exe -Wl,--out-implib,libcmTC_5273b.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_5273b.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_25d28.dir/feature_tests.c.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe   -std=c99 -o CMakeFiles\cmTC_25d28.dir\feature_tests.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_25d28.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_25d28.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_25d28.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_25d28.dir/objects.a @CMakeFiles\cmTC_25d28.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_25d28.dir/objects.a -Wl,--no-whole-archive  -o cmTC_25d28.exe -Wl,--out-implib,libcmTC_25d28.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_25d28.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
@@ -229,16 +229,16 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleI
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_30035/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_30035.dir\build.make CMakeFiles/cmTC_30035.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_a3b54/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_a3b54.dir\build.make CMakeFiles/cmTC_a3b54.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_30035.dir/feature_tests.c.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_30035.dir\feature_tests.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.c
-Linking C executable cmTC_30035.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_30035.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_30035.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_30035.dir/objects.a @CMakeFiles\cmTC_30035.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_30035.dir/objects.a -Wl,--no-whole-archive  -o cmTC_30035.exe -Wl,--out-implib,libcmTC_30035.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_30035.dir\linklibs.rsp
+Building C object CMakeFiles/cmTC_a3b54.dir/feature_tests.c.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe   -std=c90 -o CMakeFiles\cmTC_a3b54.dir\feature_tests.c.obj   -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.c
+Linking C executable cmTC_a3b54.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_a3b54.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_a3b54.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_a3b54.dir/objects.a @CMakeFiles\cmTC_a3b54.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_a3b54.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a3b54.exe -Wl,--out-implib,libcmTC_a3b54.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a3b54.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
@@ -249,32 +249,32 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleI
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_222bb/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_222bb.dir\build.make CMakeFiles/cmTC_222bb.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_ad4f6/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_ad4f6.dir\build.make CMakeFiles/cmTC_ad4f6.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_222bb.dir/testCXXCompiler.cxx.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -o CMakeFiles\cmTC_222bb.dir\testCXXCompiler.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
-Linking CXX executable cmTC_222bb.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_222bb.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_222bb.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_222bb.dir/objects.a @CMakeFiles\cmTC_222bb.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_222bb.dir/objects.a -Wl,--no-whole-archive  -o cmTC_222bb.exe -Wl,--out-implib,libcmTC_222bb.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_222bb.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_ad4f6.dir/testCXXCompiler.cxx.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -o CMakeFiles\cmTC_ad4f6.dir\testCXXCompiler.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTC_ad4f6.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_ad4f6.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_ad4f6.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_ad4f6.dir/objects.a @CMakeFiles\cmTC_ad4f6.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_ad4f6.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ad4f6.exe -Wl,--out-implib,libcmTC_ad4f6.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ad4f6.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_7c6c9/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_7c6c9.dir\build.make CMakeFiles/cmTC_7c6c9.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_99bc0/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_99bc0.dir\build.make CMakeFiles/cmTC_99bc0.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_7c6c9.dir/CMakeCXXCompilerABI.cpp.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -o CMakeFiles\cmTC_7c6c9.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTC_7c6c9.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7c6c9.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7c6c9.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_7c6c9.dir/objects.a @CMakeFiles\cmTC_7c6c9.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_7c6c9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7c6c9.exe -Wl,--out-implib,libcmTC_7c6c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
+Building CXX object CMakeFiles/cmTC_99bc0.dir/CMakeCXXCompilerABI.cpp.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -o CMakeFiles\cmTC_99bc0.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_99bc0.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_99bc0.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_99bc0.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_99bc0.dir/objects.a @CMakeFiles\cmTC_99bc0.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_99bc0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_99bc0.exe -Wl,--out-implib,libcmTC_99bc0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
 Using built-in specs.
 COLLECT_GCC=C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe
 COLLECT_LTO_WRAPPER=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe
@@ -284,8 +284,8 @@ Thread model: posix
 gcc version 4.9.1 (i686-posix-dwarf-rev2, Built by MinGW-W64 project) 
 COMPILER_PATH=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/bin/
 LIBRARY_PATH=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/;C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c6c9.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
- C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\cczQo4x4.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_7c6c9.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_7c6c9.dir/objects.a --no-whole-archive --out-implib libcmTC_7c6c9.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_99bc0.exe' '-shared-libgcc' '-mtune=generic' '-march=i686'
+ C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\ccdQ0BeJ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_99bc0.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_99bc0.dir/objects.a --no-whole-archive --out-implib libcmTC_99bc0.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
@@ -293,16 +293,16 @@ Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_7c6c9/fast"]
-  ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_7c6c9.dir\build.make CMakeFiles/cmTC_7c6c9.dir/build]
+  ignore line: [Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_99bc0/fast"]
+  ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_99bc0.dir\build.make CMakeFiles/cmTC_99bc0.dir/build]
   ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_7c6c9.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -o CMakeFiles\cmTC_7c6c9.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTC_7c6c9.exe]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_7c6c9.dir\link.txt --verbose=1]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_7c6c9.dir/objects.a]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_7c6c9.dir/objects.a @CMakeFiles\cmTC_7c6c9.dir\objects1.rsp]
-  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_7c6c9.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7c6c9.exe -Wl,--out-implib,libcmTC_7c6c9.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
+  ignore line: [Building CXX object CMakeFiles/cmTC_99bc0.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -o CMakeFiles\cmTC_99bc0.dir\CMakeCXXCompilerABI.cpp.obj -c C:\Users\sebru_000\Desktop\Compilers\cmake\share\cmake-3.8\Modules\CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_99bc0.exe]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_99bc0.dir\link.txt --verbose=1]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_99bc0.dir/objects.a]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_99bc0.dir/objects.a @CMakeFiles\cmTC_99bc0.dir\objects1.rsp]
+  ignore line: [C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe     -v -Wl,--whole-archive CMakeFiles\cmTC_99bc0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_99bc0.exe -Wl,--out-implib,libcmTC_99bc0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe]
@@ -319,13 +319,13 @@ Parsed CXX implicit link information from above output:
   ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib/]
   ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/]
   ignore line: [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_7c6c9.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
-  link line: [ C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\cczQo4x4.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_7c6c9.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_7c6c9.dir/objects.a --no-whole-archive --out-implib libcmTC_7c6c9.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_99bc0.exe' '-shared-libgcc' '-mtune=generic' '-march=i686']
+  link line: [ C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe -plugin C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll -plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\ccdQ0BeJ.res -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-ladvapi32 -plugin-opt=-pass-through=-lshell32 -plugin-opt=-pass-through=-luser32 -plugin-opt=-pass-through=-lkernel32 -plugin-opt=-pass-through=-liconv -plugin-opt=-pass-through=-lmingw32 -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lmoldname -plugin-opt=-pass-through=-lmingwex -plugin-opt=-pass-through=-lmsvcrt --sysroot=C:/mingw491/i686-491-posix-dwarf-rt_v3-rev2/mingw32 -m i386pe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTC_99bc0.exe C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1 -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib -LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../.. --whole-archive CMakeFiles\cmTC_99bc0.dir/objects.a --no-whole-archive --out-implib libcmTC_99bc0.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lpthread -ladvapi32 -lshell32 -luser32 -lkernel32 -liconv -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtend.o]
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../libexec/gcc/i686-w64-mingw32/4.9.1/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\cczQo4x4.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\SEBRU_~1\AppData\Local\Temp\ccdQ0BeJ.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lmingw32] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
@@ -353,7 +353,7 @@ Parsed CXX implicit link information from above output:
     arg [-u] ==> ignore
     arg [___deregister_frame_info] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_7c6c9.exe] ==> ignore
+    arg [cmTC_99bc0.exe] ==> ignore
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib/../lib/crt2.o] ==> ignore
     arg [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/crtbegin.o] ==> ignore
     arg [-LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1] ==> dir [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1]
@@ -363,10 +363,10 @@ Parsed CXX implicit link information from above output:
     arg [-LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib] ==> dir [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../../../i686-w64-mingw32/lib]
     arg [-LC:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../..] ==> dir [C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/../lib/gcc/i686-w64-mingw32/4.9.1/../../..]
     arg [--whole-archive] ==> ignore
-    arg [CMakeFiles\cmTC_7c6c9.dir/objects.a] ==> ignore
+    arg [CMakeFiles\cmTC_99bc0.dir/objects.a] ==> ignore
     arg [--no-whole-archive] ==> ignore
     arg [--out-implib] ==> ignore
-    arg [libcmTC_7c6c9.dll.a] ==> ignore
+    arg [libcmTC_99bc0.dll.a] ==> ignore
     arg [--major-image-version] ==> ignore
     arg [0] ==> ignore
     arg [--minor-image-version] ==> ignore
@@ -411,16 +411,16 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_2cb85/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_2cb85.dir\build.make CMakeFiles/cmTC_2cb85.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_a4cf0/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_a4cf0.dir\build.make CMakeFiles/cmTC_a4cf0.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_2cb85.dir/feature_tests.cxx.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_2cb85.dir\feature_tests.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_2cb85.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_2cb85.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_2cb85.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_2cb85.dir/objects.a @CMakeFiles\cmTC_2cb85.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_2cb85.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2cb85.exe -Wl,--out-implib,libcmTC_2cb85.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2cb85.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_a4cf0.dir/feature_tests.cxx.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe    -std=c++14 -o CMakeFiles\cmTC_a4cf0.dir\feature_tests.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_a4cf0.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_a4cf0.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_a4cf0.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_a4cf0.dir/objects.a @CMakeFiles\cmTC_a4cf0.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_a4cf0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_a4cf0.exe -Wl,--out-implib,libcmTC_a4cf0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_a4cf0.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
@@ -486,16 +486,16 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleI
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_ccb99/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_ccb99.dir\build.make CMakeFiles/cmTC_ccb99.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_50a64/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_50a64.dir\build.make CMakeFiles/cmTC_50a64.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_ccb99.dir/feature_tests.cxx.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_ccb99.dir\feature_tests.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_ccb99.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_ccb99.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_ccb99.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_ccb99.dir/objects.a @CMakeFiles\cmTC_ccb99.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_ccb99.dir/objects.a -Wl,--no-whole-archive  -o cmTC_ccb99.exe -Wl,--out-implib,libcmTC_ccb99.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_ccb99.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_50a64.dir/feature_tests.cxx.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe    -std=c++11 -o CMakeFiles\cmTC_50a64.dir\feature_tests.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_50a64.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_50a64.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_50a64.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_50a64.dir/objects.a @CMakeFiles\cmTC_50a64.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_50a64.dir/objects.a -Wl,--no-whole-archive  -o cmTC_50a64.exe -Wl,--out-implib,libcmTC_50a64.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_50a64.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
@@ -561,16 +561,16 @@ mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleI
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_77275/fast"
-C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_77275.dir\build.make CMakeFiles/cmTC_77275.dir/build
+Run Build Command:"C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe" "cmTC_e2e49/fast"
+C:/Users/sebru_000/Desktop/Compilers/mingw32/bin/mingw32-make.exe -f CMakeFiles\cmTC_e2e49.dir\build.make CMakeFiles/cmTC_e2e49.dir/build
 mingw32-make.exe[1]: Entering directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_77275.dir/feature_tests.cxx.obj
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_77275.dir\feature_tests.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.cxx
-Linking CXX executable cmTC_77275.exe
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_77275.dir\link.txt --verbose=1
-C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_77275.dir/objects.a
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_77275.dir/objects.a @CMakeFiles\cmTC_77275.dir\objects1.rsp
-C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_77275.dir/objects.a -Wl,--no-whole-archive  -o cmTC_77275.exe -Wl,--out-implib,libcmTC_77275.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_77275.dir\linklibs.rsp
+Building CXX object CMakeFiles/cmTC_e2e49.dir/feature_tests.cxx.obj
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe    -std=c++98 -o CMakeFiles\cmTC_e2e49.dir\feature_tests.cxx.obj -c C:\Users\sebru_000\Desktop\Ray-TriangleIntersection\build\CMakeFiles\feature_tests.cxx
+Linking CXX executable cmTC_e2e49.exe
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E cmake_link_script CMakeFiles\cmTC_e2e49.dir\link.txt --verbose=1
+C:\Users\sebru_000\Desktop\Compilers\cmake\bin\cmake.exe -E remove -f CMakeFiles\cmTC_e2e49.dir/objects.a
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\ar.exe cr CMakeFiles\cmTC_e2e49.dir/objects.a @CMakeFiles\cmTC_e2e49.dir\objects1.rsp
+C:\Users\sebru_000\Desktop\Compilers\mingw32\bin\g++.exe      -Wl,--whole-archive CMakeFiles\cmTC_e2e49.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e2e49.exe -Wl,--out-implib,libcmTC_e2e49.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_e2e49.dir\linklibs.rsp
 mingw32-make.exe[1]: Leaving directory 'C:/Users/sebru_000/Desktop/Ray-TriangleIntersection/build/CMakeFiles/CMakeTmp'
 
 
